@@ -19,11 +19,27 @@ $arrayMatch = [
     ],
     [
         "id" => "2",
-        "match" => "22/05/2022",
+        "match" => "16/05/2022",
         "homeTeam" => "Torino",
         "awayTeam" => "Venezia",
         "homePoints" => "75",
         "awayPoints" => "44",
+    ],
+    [
+        "id" => "3",
+        "match" => "13/05/2022",
+        "homeTeam" => "Roma",
+        "awayTeam" => "Firenze",
+        "homePoints" => "64",
+        "awayPoints" => "85",
+    ],
+    [
+        "id" => "3",
+        "match" => "14/05/2022",
+        "homeTeam" => "Bari",
+        "awayTeam" => "Palermo",
+        "homePoints" => "89",
+        "awayPoints" => "90",
     ],
 ];
 
@@ -42,8 +58,13 @@ $arrayMatch = [
 </head>
 <body>
     
-
-
-
+    <h2>Match</h2>
+        <?php for ($i = 0; $i < count($arrayMatch); $i++){ ?>
+        <p>
+            <?php
+                echo $arrayMatch[$i]['homeTeam'] . " - " . $arrayMatch[$i]['awayTeam'] . " | " . $arrayMatch[$i]['homePoints'] . " - " . $arrayMatch[$i]['awayPoints'];
+            ?>
+        </p>
+        <?php }?>
 </body>
 </html>
