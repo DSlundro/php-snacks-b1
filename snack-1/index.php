@@ -34,7 +34,7 @@ $arrayMatch = [
         "awayPoints" => "85",
     ],
     [
-        "id" => "3",
+        "id" => "4",
         "match" => "14/05/2022",
         "homeTeam" => "Bari",
         "awayTeam" => "Palermo",
